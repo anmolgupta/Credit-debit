@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            width: 352px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="style1">
+            <tr>
+                <td class="style2">
+                    <asp:Image ID="Image1" runat="server" Height="313px" 
+                        ImageUrl="~/images/RAIL-LOGO-3.jpg" Width="344px" />
+                </td>
+                <td align="center" 
+                    style="font-family: Arial, Helvetica, sans-serif; font-size: 700%; color: #0000FF;">
+                    NORTHERN RAILWAYS</td>
+            </tr>
+        </table>
+&nbsp;
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+<p align="center">
+    &nbsp;</p>
+<p align="center">
+    &nbsp;&nbsp; Copyright ©. All rights reserved.</p>
+</body>
+</html>
